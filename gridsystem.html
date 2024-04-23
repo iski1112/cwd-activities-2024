@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr); /* Twelve equal-width columns */
+        grid-gap: 50px; /* Gap between grid items */
+        text-align: center;
+        background-position-y: center;
+        
+    }
+    .grid-item {
+        background-color: #6d5a38;
+        padding: 20px;
+        grid-template-columns: repeat(12, 1fr); /* Twelve equal-width columns */
+        background-size: 50%; /* Adjust the background size */
+    }
+
+    .grid-description {
+        background-color: #6b5f37;
+        padding: 20px;
+        font-size: 100px;
+        font-weight: bold;
+        margin-top: 10px; /* Add spacing between the image and description */
+        text-align: center; /* Align the text to the center */
+        background-position-y: center
+    }
+    .grid-title {
+        grid-column: 1 / -1; /* Span across all columns */
+        font-size: 100px;
+        font-weight: bold;
+        text-align: center;
+        background-color: #574328;
+    }
+    .grid-image {
+        width: 100%;
+        height: auto;
+        justify-content: center; /* Center the grid horizontally */
+        align-items: right; /* Center the grid vertically */
+        background-color: #bd78dd; /* Set a background color for the website */
+    }
+    .grid-right {
+        justify-self: end; /* Aligns items to the right */
+    }
+</style>
+</head>
+<body>
+<div class="grid-title">
+    <div class="grid-title">Grid System</div>
+    
+    <div class="grid-container grid-item">
+    <img src="image/cofee.jpg" alt=""> Model No. 1
+    <div class="grid-description align right">Coffee a day keeps the problem away!</div>
+    </div>
+
+    <div class="grid-container grid-item">
+    <img src="image/cofee.jpg" alt="">Model No. 2
+    <div class="grid-description align right">Coffee a day keeps the problem away!</div>
+    </div>
+
+    <div class="grid-container grid-item">
+        <img src="image/cofee.jpg" alt="">Model No. 3
+        <div class="grid-description align right">Coffee a day keeps the problem away!</div>
+        </div>
+
+    <div class="grid-container grid-item">
+    <img src="image/cofee.jpg" alt="">Model No. 4
+    <div class="grid-description align right">Coffee a day keeps the problem away!</div>
+    </div>
+
+
+
+
+</body>
+</html>
